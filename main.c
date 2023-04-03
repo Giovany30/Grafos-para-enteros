@@ -517,6 +517,9 @@ int main(){
     printf("El peso entre 400 y 500 es %0.2f", peso);
 
     int option = 0;
+    eGraphColors color;
+    int distance;
+    List* vecinos;
     while(option != -1){
         printf("\nIngrese el índice del vértice que desea: ");
         scanf("%d", &option);
@@ -529,9 +532,9 @@ int main(){
         }
         else{
             Vertex* v = Graph_GetVertexByIndex(grafo, option);
-            eGraphColors color = Vertex_GetColor(v);
-            int distance = Vertex_GetDistance(v);
-            List* vecinos = v->neighbors;
+            color = Vertex_GetColor(v);
+            distance = Vertex_GetDistance(v);
+            vecinos = v->neighbors;
         }
     }
 
