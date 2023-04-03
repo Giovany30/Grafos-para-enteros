@@ -540,14 +540,3 @@ int main(){
 
     return 0;
 }
-
-#if 0
-   // crea las aristas (conexiones entre vértices):
-   Graph_AddEdge(grafo, 100, 200);
-   Graph_AddEdge(grafo, 100, 400);
-   Graph_AddEdge(grafo, 200, 300);
-   Graph_AddEdge(grafo, 200, 500);
-   Graph_AddEdge(grafo, 300, 500);
-   Graph_AddEdge(grafo, 400, 500);
-    
-#endif
